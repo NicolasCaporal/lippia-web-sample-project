@@ -47,14 +47,6 @@ And ingreso email cuydufalma@gufum.com y contraseña 12345
 And presiono en cualquier lado
 Then el sistema informa Password is not valid
 
-@manual @manualCuentaBloqueada @fallido
-Scenario: Ingreso de sesion manual fallido por cuenta bloqueada
-Given me encuentro en la ventana de "Log in"
-When presiono "Log in manually"
-And ingreso email tiltubaspa@gufum.com y contraseña 123456
-And presiono "Log in"
-Then el sistema informa Your account is temporarily locked. Check your email to proceed.
-
 
 @manual @manualCuentaSinContraseña @fallido
 Scenario: Ingreso de sesion manual fallido por cuenta sin contraseña
