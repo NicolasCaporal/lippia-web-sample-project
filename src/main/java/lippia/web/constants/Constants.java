@@ -53,9 +53,7 @@ public class Constants {
 
     public static final String ACTIVE_WORKSPACE_NAME = "xpath://p[contains(text(), '%s')]";
 
-    public static final String LOGO_LOADER = "xpath://*[contains(@class, \"rotating-loader\")]";
-
-
+    
     // LOGOUT ----------------------------------------------------------------------------------------------------------
     public static final String LOGOUT_BUTTON = "xpath://a[@data-cy=\"logout\"]";
 
