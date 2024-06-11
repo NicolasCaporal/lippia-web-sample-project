@@ -1,21 +1,19 @@
 package lippia.web.services;
 
+import com.crowdar.core.actions.WebActionManager;
 import io.cucumber.java.en.*;
 import java.time.Instant;
 
 public class Utilities {
-
-    @Given("^tengo la sesion iniciada")
-    public void login(){
-        LoginService.loginPage();
-        LoginService.clickLoginManuallyButton();
-        LoginService.setEmail("cuydufalma@gufum.com");
-        LoginService.setPassword("tortugamaritima");
-        LoginService.clickLoginButton();
-    }
-
-    public static String timeStampName(){
+    public static String timeStampName(String text){
         long unixTimestamp = Instant.now().getEpochSecond();
-        return "test" + unixTimestamp;
+        return text + unixTimestamp;
     }
+
+    public static void deletePlaceholder(String xpath, int length) {
+        for (int i = 0; i<length; i++) {
+            WebActionManager.setInput(xpath, "\b");
+        }
+    }
+
 }

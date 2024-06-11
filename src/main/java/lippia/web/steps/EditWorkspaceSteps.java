@@ -24,7 +24,7 @@ public class EditWorkspaceSteps {
 
     @When("^modifico el nombre del Workspace")
     public void changeWorkspaceName(){
-        this.newName = Utilities.timeStampName();
+        this.newName = Utilities.timeStampName("WorkspaceEdit");
         EditWorkspaceService.changeName(this.newName);
     }
 

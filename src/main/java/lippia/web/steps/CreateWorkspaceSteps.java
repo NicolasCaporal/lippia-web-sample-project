@@ -19,7 +19,7 @@ public class CreateWorkspaceSteps extends PageSteps {
 
     @When ("^ingreso un nombre de workspace unico")
     public void setName() {
-        this.workspaceName = Utilities.timeStampName();
+        this.workspaceName = Utilities.timeStampName("Workspace");
         CreateWorkspaceService.setName(this.workspaceName);
     }
 

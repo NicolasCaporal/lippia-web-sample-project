@@ -16,7 +16,7 @@ public class CreateProjectSteps extends PageSteps {
 
     @When ("^ingreso un nombre de proyecto unico")
     public void setName() {
-        this.projectName = Utilities.timeStampName();
+        this.projectName = Utilities.timeStampName("proyect");
         CreateProjectService.setName(this.projectName);
     }
 
