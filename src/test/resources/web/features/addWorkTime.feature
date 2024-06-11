@@ -1,11 +1,8 @@
 @addWorkTime @TP_Final
 Feature: Añadir tiempo de trabajo
+
   Background:
-    Given me encuentro en la ventana de "Log in"
-    And presiono "Log in manually"
-    And ingreso email cuydufalma@gufum.com y contraseña tortugamaritima
-    And presiono "Log in"
-    And el sistema inicia sesión y redirige a la pantalla principal
+    Given tengo la sesion iniciada con mail cuydufalma@gufum.com y contraseña tortugamaritima
 
 
   @añadirTiempoDeTrabajoManual @exitoso
