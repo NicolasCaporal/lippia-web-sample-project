@@ -4,16 +4,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lippia.web.services.AddWorkTimeService;
-import lippia.web.services.CreateProjectService;
 import lippia.web.services.Utilities;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Random;
+
 
 public class AddWorkTimeSteps {
-
     private String entryDescription;
+
 
     @Given("^estoy en la sección TimeTracker")
     public void timeTracker() {

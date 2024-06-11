@@ -36,9 +36,6 @@ public class AddWorkTimeService extends ActionManager {
         click(WorkTimeConstants.MANUAL_BUTTON);
     }
 
-  /*  public static void setWorkedTime(String num) {
-        setInput(Constants.DURATION_INPUT, num);
-    } */
 
     public static void clickAdd(){
         click(WorkTimeConstants.ADD_BUTTON);

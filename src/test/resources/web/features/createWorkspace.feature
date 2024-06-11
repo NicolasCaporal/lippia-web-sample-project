@@ -8,7 +8,7 @@ Background:
   And el sistema inicia sesión y redirige a la pantalla principal
 
 @crearWorkspaceExitoso @exitoso
-Scenario: Creacion de nuevo workspace exitoso
-When ingreso un nombre de workspace unico
-And presiono el boton Create Workspace
-Then el sistema crea el nuevo workspace correctamente
+  Scenario: Creacion de nuevo workspace exitoso
+    When ingreso un nombre de workspace unico
+    And presiono el boton Create Workspace
+    Then el sistema crea el nuevo workspace correctamente

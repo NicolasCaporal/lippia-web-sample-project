@@ -20,6 +20,7 @@ Feature: Añadir tiempo de trabajo
     Then el sistema informa Time entry has been created
     And crea la entrada de trabajo correctamente
 
+
   @cancelarTiempoDeTrabajoTimer @exitoso
   Scenario: Añadir tiempo de trabajo con Timer
     Given estoy en la sección TimeTracker
@@ -27,6 +28,7 @@ Feature: Añadir tiempo de trabajo
     And presiono el boton Start
     And selecciono Discard
     Then el sistema informa Timer cancelled
+
 
   @modificarDatosTiempoTrabajo @exitoso
   Scenario: Modificar datos de tiempo de trabajo
@@ -44,3 +46,4 @@ Feature: Añadir tiempo de trabajo
     Then el sistema informa Successfully updated date and time
     When asigno un proyecto nuevo
     Then el sistema informa Project has been updated
+

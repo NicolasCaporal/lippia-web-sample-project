@@ -1,7 +1,6 @@
 package lippia.web.constants;
 
 public class WorkspaceConstants {
-    // CREATE WORKSPACE ------------------------------------------------------------------------------------------------
     public static final String MENU_BUTTON = "xpath://a[starts-with(@class,\"cl-d-flex cl-dropdown-toggle\")]";
     public static final String MANAGE_WORKSPACES_BUTTON = "xpath://a[@routerlink=\"/workspaces\"]";
     public static final String CREATE_NEW_WORKSPACE_BUTTON = "xpath://button[contains(@class, \"cl-btn cl-btn-outline-primary\")]";

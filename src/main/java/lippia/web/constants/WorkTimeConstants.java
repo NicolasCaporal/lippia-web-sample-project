@@ -1,7 +1,6 @@
 package lippia.web.constants;
 
 public class WorkTimeConstants {
-    // ADD WORK TIME ---------------------------------------------------------------------------------------------------
     public static final String TIMETRACKER_BUTTON = "xpath://*[@id=\"cdk-drop-list-0\"]/li[1]/div";
     public static final String TIMER_BUTTON = "xpath://a[@data-cy='timer-mode']";
     public static final String START_STOP_DIV = "xpath://div[@triggers='manual' and @placement='bottom' and @tabindex='0']";
