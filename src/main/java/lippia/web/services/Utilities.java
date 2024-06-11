@@ -10,6 +10,7 @@ public class Utilities {
         return text + unixTimestamp;
     }
 
+    // No me anda el .clear()
     public static void deletePlaceholder(String xpath, int length) {
         for (int i = 0; i<length; i++) {
             WebActionManager.setInput(xpath, "\b");

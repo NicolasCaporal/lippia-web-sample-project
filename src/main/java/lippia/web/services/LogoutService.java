@@ -1,7 +1,8 @@
 package lippia.web.services;
 
 import com.crowdar.core.actions.WebActionManager;
-import lippia.web.constants.Constants;
+import lippia.web.constants.LoginConstants;
+import lippia.web.constants.LogoutConstants;
 import org.testng.Assert;
 
 import static com.crowdar.core.actions.ActionManager.click;
@@ -9,16 +10,16 @@ import static com.crowdar.core.actions.ActionManager.click;
 public class LogoutService {
 
     public static void clickAvatarPicture(){
-        click(Constants.AVATAR);
+        click(LoginConstants.AVATAR);
     }
 
     public static void clickLogout(){
-        click(Constants.LOGOUT_BUTTON);
+        click(LogoutConstants.LOGOUT_BUTTON);
     }
 
     public static void checkLogout(){
-        WebActionManager.waitInvisibility(Constants.AVATAR);
-        Assert.assertFalse(WebActionManager.isPresent(Constants.AVATAR));
+        WebActionManager.waitInvisibility(LoginConstants.AVATAR);
+        Assert.assertFalse(WebActionManager.isPresent(LoginConstants.AVATAR));
     }
 
 }

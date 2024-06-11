@@ -36,7 +36,6 @@ Feature: Añadir tiempo de trabajo
     And presiono el boton Start
     And presiono el boton Stop
     And crea la entrada de trabajo correctamente
-    
     When modifico la descripcion
     Then el sistema informa Successfully updated description
     When presiono el boton Billable
